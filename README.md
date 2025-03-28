@@ -1,4 +1,4 @@
-0.Zadanie: projekt z task runnerem
+Zadanie: projekt z task runnerem
 
 W tym miniprojekcie zakodujesz prosty landing page, używając task runnera i Gita.
 
