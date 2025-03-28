@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  font-family: "Monomakh", system-ui;
+}
+
+main {
+  max-width: 686px;
+  min-height: 1279px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+.header {
+  background: url("../images/cyberpunk-8876967.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  color: #fff;
+  position: relative;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.header .navbar .logo {
+  font-weight: bold;
+  color: #fdd835;
+  font-family: "Great Vibes", cursive;
+}
+.header .navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+.header .navbar .nav-links a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.header .navbar .nav-links a:hover {
+  color: #fdd835;
+}
+.header .hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .hero .hero-subtitle {
+  font-style: italic;
+  font-size: 16px;
+}
+.header .hero .hero-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.header .hero .btn {
+  background: #fdd835;
+  color: #222;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.header .hero .btn:hover {
+  color: #666666;
+}
+
+/* SERVICES */
+.services {
+  text-align: center;
+  padding: 60px 60px;
+}
+.services h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.services p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.services .service-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.services .service-boxes .service {
+  flex: 1;
+  padding: 0 10px;
+}
+.services .service-boxes .service i {
+  font-size: 36px;
+  color: #fdd835;
+  margin-bottom: 15px;
+}
+.services .service-boxes .service h3 {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 10px;
+}
+.services .service-boxes .service p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Portfolio */
+.portfolio {
+  text-align: center;
+  padding: 60px 60px;
+  background: linear-gradient(to bottom, #f9f6f2, #f8f8f8);
+}
+.portfolio h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.portfolio p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.portfolio .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.portfolio .portfolio-grid .item {
+  background: #f9f9f9;
+  padding-bottom: 20px;
+}
+.portfolio .portfolio-grid .item img {
+  width: 100%;
+  display: block;
+}
+.portfolio .portfolio-grid .item h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+.portfolio .portfolio-grid .item p {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Footer */
+.footer {
+  background: #f8f8f8;
+  padding: 20px 0;
+  font-size: 13px;
+  color: #444;
+}
+.footer .footer-content {
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-content p {
+  margin: 0;
+}
+.footer .footer-content .socials {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-content .socials a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+.footer .footer-content .socials a:hover {
+  background: #fdd835;
+  color: #000;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  main {
+    max-width: 100%;
+    min-height: auto;
+  }
+  .header {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .header .hero-title {
+    font-size: 22px;
+    white-space: normal;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services .service-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .service-boxes .service {
+    max-width: 300px;
+  }
+  .portfolio .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0VBR0Msc0JBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtBQ0NEOztBREVBO0VBQ0Msc0JBQUE7RUFDQSxrQ0FBQTtBQ0NEOztBREVBO0VBQ0MsZ0JBQUE7RUFDQSxrQkFBQTtFQUNBLHNCQUFBO0VBQ0EsY0FBQTtBQ0NEOztBREVBO0VBQ0MscUJBQUE7QUNDRDs7QURFQSxXQUFBO0FBQ0E7RUFDQyxrREFBQTtFQUNBLDRCQUFBO0VBQ0Esc0JBQUE7RUFDQSxhQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0FDQ0Q7QURDQztFQUNDLGFBQUE7RUFDQSw4QkFBQTtFQUNBLG1CQUFBO0VBQ0Esa0JBQUE7QUNDRjtBRENFO0VBQ0MsaUJBQUE7RUFDQSxjQUFBO0VBQ0EsbUNBQUE7QUNDSDtBREVFO0VBQ0MsYUFBQTtFQUNBLFNBQUE7QUNBSDtBREVHO0VBQ0MsY0FBQTtFQUNBLHFCQUFBO0VBRUEsZUFBQTtFQUNBLHlCQUFBO0FDREo7QURHSTtFQUNDLGNBQUE7QUNETDtBRE9DO0VBQ0Msa0JBQUE7RUFDQSxRQUFBO0VBQ0EsU0FBQTtFQUNBLGdDQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtBQ0xGO0FET0U7RUFDQyxrQkFBQTtFQUNBLGVBQUE7QUNMSDtBRFFFO0VBQ0MsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLHlCQUFBO0VBQ0EsbUJBQUE7QUNOSDtBRFNFO0VBQ0MsbUJBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLHlCQUFBO0FDUEg7QURTRztFQUNDLGNBQUE7QUNQSjs7QURhQSxhQUFBO0FBQ0E7RUFDQyxrQkFBQTtFQUNBLGtCQUFBO0FDVkQ7QURZQztFQUNDLHlCQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0FDVkY7QURhQztFQUNDLFdBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7QUNYRjtBRGNDO0VBQ0MsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsU0FBQTtBQ1pGO0FEY0U7RUFDQyxPQUFBO0VBQ0EsZUFBQTtBQ1pIO0FEY0c7RUFDQyxlQUFBO0VBQ0EsY0FBQTtFQUNBLG1CQUFBO0FDWko7QURlRztFQUNDLGVBQUE7RUFDQSxXQUFBO0VBQ0EsbUJBQUE7QUNiSjtBRGdCRztFQUNDLGVBQUE7RUFDQSxXQUFBO0FDZEo7O0FEb0JBLGNBQUE7QUFFQTtFQUNDLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSx3REFBQTtBQ2xCRDtBRG9CQztFQUNDLHlCQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0FDbEJGO0FEcUJDO0VBQ0MsV0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBQ25CRjtBRHNCQztFQUNDLGFBQUE7RUFDQSxxQ0FBQTtFQUNBLFNBQUE7QUNwQkY7QURzQkU7RUFDQyxtQkFBQTtFQUNBLG9CQUFBO0FDcEJIO0FEc0JHO0VBQ0MsV0FBQTtFQUNBLGNBQUE7QUNwQko7QUR1Qkc7RUFDQyxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0FDckJKO0FEd0JHO0VBQ0MsZUFBQTtFQUNBLFdBQUE7QUN0Qko7O0FENEJBLFdBQUE7QUFFQTtFQUNDLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxXQUFBO0FDMUJEO0FENEJDO0VBQ0MsZ0JBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxtQkFBQTtBQzFCRjtBRDRCRTtFQUNDLFNBQUE7QUMxQkg7QUQ2QkU7RUFDQyxhQUFBO0VBQ0EsU0FBQTtBQzNCSDtBRDZCRztFQUNDLFdBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxnQkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsZUFBQTtFQUNBLDJCQUFBO0FDM0JKO0FENkJJO0VBQ0MsbUJBQUE7RUFDQSxXQUFBO0FDM0JMOztBRGtDQSxnQkFBQTtBQUVBO0VBQ0M7SUFDQyxlQUFBO0lBQ0EsZ0JBQUE7RUNoQ0E7RURtQ0Q7SUFDQyxZQUFBO0lBQ0Esa0JBQUE7RUNqQ0E7RURtQ0E7SUFDQyxlQUFBO0lBQ0EsbUJBQUE7RUNqQ0Q7RURxQ0Q7SUFDQyxzQkFBQTtJQUNBLFNBQUE7RUNuQ0E7RURxQ0E7SUFDQyxlQUFBO0lBQ0EsdUJBQUE7RUNuQ0Q7RUR1Q0Q7SUFDQyxzQkFBQTtJQUNBLG1CQUFBO0VDckNBO0VEdUNBO0lBQ0MsZ0JBQUE7RUNyQ0Q7RUR5Q0Q7SUFDQywwQkFBQTtFQ3ZDQTtFRDBDRDtJQUNDLHNCQUFBO0lBQ0EsU0FBQTtJQUNBLGtCQUFBO0VDeENBO0FBQ0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

@@ -19,7 +19,3 @@ Twoim zadaniem jest:
     6.Zachowanie dobrych praktyk przedstawionych w dotychczasowych treściach.
 
     7.Przystosowanie strony do odpowiedniego wyświetlania na urządzeniach mobilnych (RWD).
-
-//660 - 320 Header - Obraz
-//115 - 34 Button tell me more
-//140 - 188 our Portfolio
